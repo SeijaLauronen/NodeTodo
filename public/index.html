@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h2>Pohja tehty tekoälyllä</h2>
+    <hr />
+    <h1>TODO Lista</h1>
+
+    <!-- Tekijän lisäys -->
+    <h2>Lisää tekijä</h2>
+    <form id="add-user-form">
+        <input type="text" id="firstName" placeholder="Etunimi" required />
+        <input type="text" id="lastName" placeholder="Sukunimi" required />
+        <button type="submit">Lisää Tekijä</button>
+    </form>
+
+    <!-- Tekijät lista -->
+    <h3>Tekijät</h3>
+    <ul id="user-list"></ul>
+
+    <!-- Tehtävän lisäys -->
+    <h2>Lisää tehtävä</h2>
+    <form id="add-task-form">
+        <input type="text" id="task" placeholder="Tehtävä" required />
+        <input type="date" id="dueDate" required />
+        <select id="assignedUser"></select>
+        <button type="submit">Lisää Tehtävä</button>
+    </form>
+
+    <!-- TODO-lista -->
+    <h3>TODO Lista</h3>
+    <ul id="todo-list"></ul>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
